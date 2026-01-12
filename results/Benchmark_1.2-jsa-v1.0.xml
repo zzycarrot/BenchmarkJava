@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RESULT>
+  <errors>
+    <error>
+      <defectInfo>
+        <id><![CDATA[DomElement.innerHTML.1.id]]></id>
+        <category>不正确输入校验</category>
+        <subCategory>跨站脚本</subCategory>
+        <issueType><![CDATA[DOM]]></issueType>
+        <checkerName>SecJS_Cross_Site_Scripting</checkerName>
+        <checkerId>7252a8d8c4484009b47fb71f6610d973</checkerId>
+        <function><![CDATA[displayResult]]></function>
+        <reportLine>4</reportLine>
+        <column>5</column>
+        <folder><![CDATA[E:\OWASP\BenchmarkJava\src\main\java\org\owasp\benchmark\testcode]]></folder>
+        <fileName><![CDATA[E:\OWASP\BenchmarkJava\src\main\java\org\owasp\benchmark\testcode\BenchmarkTest02741.js]]></fileName>
+        <description><![CDATA[向一个 Web 浏览器发送未经验证的数据会导致该浏览器执行恶意代码。]]></description>
+        <extra><![CDATA[]]></extra>
+        <severity>MEDIUM</severity>
+      </defectInfo>
+      <events>
+        <event>
+          <file><![CDATA[E:\OWASP\BenchmarkJava\src\main\java\org\owasp\benchmark\testcode\BenchmarkTest02741.js]]></file>
+          <reportLine>2</reportLine>
+          <function><![CDATA[displayResult]]></function>
+          <main>false</main>
+          <sequence>1</sequence>
+          <eventType><![CDATA[Source]]></eventType>
+          <description><![CDATA[document.getElementById(&quot;searchInput&quot;).value]]></description>
+        </event>
+        <event>
+          <file><![CDATA[E:\OWASP\BenchmarkJava\src\main\java\org\owasp\benchmark\testcode\BenchmarkTest02741.js]]></file>
+          <reportLine>2</reportLine>
+          <function><![CDATA[displayResult]]></function>
+          <main>false</main>
+          <sequence>2</sequence>
+          <eventType><![CDATA[Transfer]]></eventType>
+          <description><![CDATA[userInput = document.getElementById(&quot;searchInput&quot;).value]]></description>
+        </event>
+        <event>
+          <file><![CDATA[E:\OWASP\BenchmarkJava\src\main\java\org\owasp\benchmark\testcode\BenchmarkTest02741.js]]></file>
+          <reportLine>5</reportLine>
+          <function><![CDATA[displayResult]]></function>
+          <main>false</main>
+          <sequence>3</sequence>
+          <eventType><![CDATA[Transfer]]></eventType>
+          <description><![CDATA[userInput]]></description>
+        </event>
+        <event>
+          <file><![CDATA[E:\OWASP\BenchmarkJava\src\main\java\org\owasp\benchmark\testcode\BenchmarkTest02741.js]]></file>
+          <reportLine>5</reportLine>
+          <function><![CDATA[displayResult]]></function>
+          <main>false</main>
+          <sequence>4</sequence>
+          <eventType><![CDATA[Transfer]]></eventType>
+          <description><![CDATA[&quot;搜索结果：&quot; + userInput]]></description>
+        </event>
+        <event>
+          <file><![CDATA[E:\OWASP\BenchmarkJava\src\main\java\org\owasp\benchmark\testcode\BenchmarkTest02741.js]]></file>
+          <reportLine>4</reportLine>
+          <function><![CDATA[displayResult]]></function>
+          <main>true</main>
+          <sequence>5</sequence>
+          <eventType><![CDATA[Sink]]></eventType>
+          <description><![CDATA[document.getElementById(&quot;result&quot;).innerHTML = ]]></description>
+        </event>
+      </events>
+    </error>
+  </errors>
+  <scanFiles>
+    <scanFile><![CDATA[C:\Users\ez_zz\.dsa\dlir\xsstest\E\OWASP\BenchmarkJava\src\main\java\org\owasp\benchmark\testcode\BenchmarkTest02741.js]]></scanFile>
+  </scanFiles>
+</RESULT>
